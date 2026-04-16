@@ -1,11 +1,108 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <title>Simple Static Web Page</title>
+    <meta charset="utf-8" />
+    <title>Achievement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="HTB Academy" name="author" />
+            <meta property="og:title" content="Completed File Inclusion" />
+    <meta property="og:description" content="File Inclusion is a common web application vulnerability, which can be easily overlooked as part of a web application&#039;s functionality." />
+    <meta property="og:image" content="https://cdn.services-k8s.prod.aws.htb.systems/content/modules/logo/9e65e8b2-2948-4715-ab75-14d0a411f4d4.png" />
+    <meta property="og:url" content="https://academy.hackthebox.com/achievement/877855/23" />
+    <meta property="og:type" content="game.achievement" />
+    <meta property="game:points" content="10" />
+    <meta property="article:published_time" content="2026-04-16 18:02:34" />
+    <meta property="article:author" content="Hack The Box" />
+    
+    <link rel="shortcut icon" href=/images/favicon.ico>
+    <link rel=icon type=image/png sizes=16x16 href=/images/favicon-16x16.png>
+    <link rel=icon type=image/png sizes=32x32 href=/images/favicon-32x32.png>
+    <link rel=apple-touch-icon href=/images/apple-touch-icon.png>
+    <link rel=mask-icon href=/images/safari-pinned-tab.svg>
+
+    <link rel="preload" as="style" href="https://academy.hackthebox.com/build/assets/bootstrap-dark-e2c83920.css" /><link rel="preload" as="style" href="https://academy.hackthebox.com/build/assets/app-dark-d6bbbed3.css" /><link rel="preload" as="style" href="https://academy.hackthebox.com/build/assets/icons-541b9943.css" /><link rel="stylesheet" href="https://academy.hackthebox.com/build/assets/bootstrap-dark-e2c83920.css" /><link rel="stylesheet" href="https://academy.hackthebox.com/build/assets/app-dark-d6bbbed3.css" /><link rel="stylesheet" href="https://academy.hackthebox.com/build/assets/icons-541b9943.css" />    <link rel="stylesheet" href="https://use.typekit.net/ryt3opf.css">
+
+    <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://fygapokei.hackthebox.com/htb-anal.js/v1/" + key + "/htb-anal.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="eLzeD0QoARKZ42pc8AGEUYpcFLpYkf0I";analytics.SNIPPET_VERSION="4.13.2";
+            analytics.load("eLzeD0QoARKZ42pc8AGEUYpcFLpYkf0I", { integrations: { "Segment.io": { apiHost: "fygapokei.hackthebox.com/v1" }}});
+                        analytics.page("Achievement");
+                    }
+    }();
+</script>
+
+        <script src="https://www.google.com/recaptcha/api.js?hl=&render=6LeI6LsaAAAAAKgdStgBC6B4UVbXlpYNaYGN46Ah"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N6XD42V');
+</script>
+<!-- End Google Tag Manager -->
+
 </head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my simple static web page.</p>
-    <p>Current Date and Time (UTC): 2026-04-16 21:05:02</p>
+
+<body><a href="https://academy.hackthebox.com/cdn-cgi/content?id=QJbofDtjnQkYq_056J6yOiXTzP8cKA8VcYkVhTTkGJw-1776372474.969438-1.0.1.1-O68CBKT69307fy_KhSnSJyXGZWwFM4vPkkg8N03kvgY" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6XD42V" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+    !function (a, b) {
+        a("squatch", "https://fast.ssqt.io/squatch-js@2", b)
+    }(function (a, b, c) {
+        var d, e, f;
+        c["_" + a] = {}, c[a] = {}, c[a].ready = function (b) {
+            c["_" + a].ready = c["_" + a].ready || [];
+            c["_" + a].ready.push(b);
+        }, e = document.createElement("script"), e.async = 1, e.src = b, f = document.getElementsByTagName("script")[0], f.parentNode.insertBefore(e, f)
+    }, this);
+</script>
+<div class="account-pages my-5 pt-sm-5">
+    <div class="container">
+            <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 col-xl-5">
+            <img class="mb-5" src="/images/logo.svg" size="100%">
+            <div class="card">
+                <a href="https://academy.hackthebox.com/course/preview/file-inclusion"><img class="card-img-top img-fluid" src="https://cdn.services-k8s.prod.aws.htb.systems/content/modules/logo/9e65e8b2-2948-4715-ab75-14d0a411f4d4.png" alt="File Inclusion"></a>
+                <div class="d-flex justify-content-center mt-3">
+                    <p>Congratulations <span class="text-success text-center">abhishekagrawalkumar</span>, you have completed
+                        this module!</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Module: <a href="https://academy.hackthebox.com/course/preview/file-inclusion"
+                                                    class='text-success'> <code>File Inclusion</code></a></p>
+                    <p class="card-text">Difficulty: &nbsp;<span
+                                class="badge badge-soft-warning font-size-12">Medium</span>
+                    </p>
+                    <p class="card-text">Exercises Completed: <code>13
+                            /13</code></p>
+                </div>
+                <div class="card-footer">
+                    Completed at: 16 Apr 2026
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <p>Don't have an account ? <a href="https://academy.hackthebox.com/register" class="font-weight-medium text-success">
+                        Register now </a></p>
+                <p>2020 - 2026 © HTB Academy. Powered by &nbsp;
+    <a href="https://www.hackthebox.com" target="_blank">
+        <img class="mb-1" src="/images/logo-htb.svg" height="20px" alt="Hack The Box">
+    </a>
+</p>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    
 </body>
+
 </html>
